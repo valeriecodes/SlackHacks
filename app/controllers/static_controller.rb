@@ -1,3 +1,6 @@
+require 'json'
+require 'open-uri'
+
 class StaticController < ApplicationController
   def index
   end
@@ -16,6 +19,10 @@ class StaticController < ApplicationController
     pug_count = params[:text] ? params[:text].to_i : 1
     @pugs = []
     @response = pug_count > 1 ? "PUG BOMB! Here are your #{pug_count} pugs" : "Here's a pug for you"
+    if pug_count < 1
+      @response = "You need at least one pug. " + @response
+      pug_count = 1
+    end
 
     if pug_count > 100
       @response = "That's a lot of pugs. Here's one"
