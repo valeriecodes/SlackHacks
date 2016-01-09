@@ -1,0 +1,6 @@
+{
+  "attachments" :
+    <%= raw(@pugs.map{|pug| Hash["image_url", pug, "fallback", "pug"]}.to_json) %>,
+  "text": "<%= @response %>",
+  "response_type": "in_channel"
+}
