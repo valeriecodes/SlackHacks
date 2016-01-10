@@ -22,3 +22,5 @@ Method: GET
 
 
 **Issues? Feedback? [Add them](https://github.com/valeriecodes/SlackHacks/issues) here or find me on [Twitter](https://twitter.com/valeriecodes).**
+
+**Want to give me money just for being a cool person? [Now you can!](https://www.paypal.com/paypalme/valeriecodes)**
