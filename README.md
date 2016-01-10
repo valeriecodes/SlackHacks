@@ -13,7 +13,7 @@ URL: http://slack-hacks.herokuapp.com/celebrate?format=json
 Method: GET
 
 ## Pugbomb
-Sends n pugs.
+Sends n pugs. Wrapper to [Pug Me](http://pugme.herokuapp.com/).
 ![PugBomb](https://raw.githubusercontent.com/valeriecodes/SlackHacks/master/app/assets/images/pugbomb.png)
 
 URL: http://slack-hacks.herokuapp.com/pugbomb?format=json
