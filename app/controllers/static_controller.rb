@@ -2,6 +2,8 @@ require 'json'
 require 'open-uri'
 
 class StaticController < ApplicationController
+  before_filter :set_privacy, only: [:pugbomb, :celebrate]
+
   def index
   end
 
@@ -42,5 +44,10 @@ class StaticController < ApplicationController
       format.html
       format.json
     end
+  end
+
+  private
+  def set_privacy
+    @private = params[:private].to_bool
   end
 end

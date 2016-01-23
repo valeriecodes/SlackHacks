@@ -1,4 +1,4 @@
 {
   "text": "<%= @response %>",
-  "response_type": "in_channel"
+  "response_type": "<%= @private ? 'ephemeral' : 'in_channel' %>"
 }
